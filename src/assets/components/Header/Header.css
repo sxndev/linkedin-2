@@ -1,0 +1,48 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary);
+    position: relative;
+    overflow-x: hidden;
+    font-size: clamp(8px, 2vw, 20px);
+}
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(10px,2vw,20px);
+}
+
+#logo{
+    border-radius: 30px;
+    width: 50px;
+}
+
+#nav-list{
+    display: flex;
+    gap: 10px; 
+    font-size: clamp(6px,2vw,18px);
+}
+
+#header::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    background-color: white;
+    animation: headerAnimation 5s ease-in-out infinite ;
+    overflow-x: hidden;
+}
+
+@keyframes headerAnimation{
+    0%{left: -50%;}
+    100%{left: 100%;}
+}
