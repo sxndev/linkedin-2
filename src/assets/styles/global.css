@@ -2,7 +2,8 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-color: var(--bg-secondary);
+    background:linear-gradient(var(--bg-secondary), var(--bg-primary));
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
 }

@@ -1,0 +1,16 @@
+.about{
+    background-color: rgb(19, 18, 18);
+    padding: 4vw;
+    max-width: 100%; 
+    min-height: 100vh;
+}
+
+.about-h2{
+    width: 100%;
+    font-size: clamp(20px, 4vw, 50px);
+    color: var(--color-primary);
+}
+
+.about-p{
+    margin: 20px;
+}

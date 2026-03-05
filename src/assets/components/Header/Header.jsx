@@ -1,5 +1,6 @@
 import logo from '../../images/logo.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 export const Header = () => {
     return (
         <header id="header">
@@ -10,9 +11,9 @@ export const Header = () => {
  
             <nav>
                 <ul id="nav-list">
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Feedback</a></li>
-                    <li><a href="">Sobre nós</a></li>
+                    <li><Link to="/">Início</Link></li>
+                    {/* <li><Link to="/atualiza">O que mudou?</Link></li>  */}
+                    <li><Link to="/sobre">Sobre nós</Link></li>
                 </ul>
             </nav> 
         </header>
