@@ -1,4 +1,7 @@
 import './About.css'
+import influencerPhoto from '../../images/influencer.jpeg'
+import developerPhoto from '../../images/developer.jpg'
+
 import { ProfileCard } from '../ProfileCard/ProfileCard'
 const About = () => {
     return (
@@ -12,14 +15,14 @@ const About = () => {
 
             <ProfileCard
                 name='Nicolas Silva'
-                img='./src/assets/images/developer-2.jpg' 
+                img={developerPhoto} 
                 job='Engenheiro de Software'
                 bio='"Apaixonado por tecnologia desde criança"'
                 className='developer-card'
                 /> 
             <ProfileCard
                 name='Pedro Henrique'
-                img='./src/assets/images/influencer.jpeg' 
+                img={influencerPhoto}
                 job='Gestor de Marketing'
                 bio='"Transformando ideias em posts virais de alta qualidade"' 
                 className='developer-card'
