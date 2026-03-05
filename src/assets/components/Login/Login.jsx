@@ -10,8 +10,8 @@ const Login = () => {
       <div className="inputs-container">
         <input 
         type="text" 
-        placeholder="Nome Completo:" 
-        className="inputs"
+        placeholder="Nome:" 
+        className="inputs" 
         required
          />
 
@@ -35,7 +35,7 @@ const Login = () => {
         required 
                    />
 
-        <button className="search-button">Enviar</button>
+        <button type="button" className="search-button">Enviar</button>
       </div>
     </form>
     </div>

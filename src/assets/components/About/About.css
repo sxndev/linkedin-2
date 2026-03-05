@@ -1,8 +1,13 @@
 .about{
-    background-color: rgb(19, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgb(28, 24, 40) 50%, rgb(2, 21, 84));
+    background-size: 200% 200%;
     padding: 4vw;
     max-width: 100%; 
-    min-height: 100vh;
+    animation: backgroundAnimation 1s ease infinite;
 }
 
 .about-h2{
@@ -12,5 +17,12 @@
 }
 
 .about-p{
+    font-size: clamp(12px, 2vw, 20px);
     margin: 20px;
 }
+
+@keyframes backgroundAnimation { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} 
