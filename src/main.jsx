@@ -7,7 +7,7 @@ import './assets/styles/vars.css'
 import './assets/styles/global.css'
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter basename='/linkedin-2'>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
 )
